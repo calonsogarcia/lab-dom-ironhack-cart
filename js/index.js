@@ -39,7 +39,23 @@ const  allProducts =  document.querySelectorAll('.product')
 
   // ITERATION 3
   //... your code goes here
+
+  //point to the Element
+  //point to the text
+  // calculate total with all subtotals
+const totalPriceElement = document.querySelector('#total-value span')
+let totalPrice = totalPriceElement.innerText
+
+const allSubtotals = product.querySelectorAll('.subtotal')
+for (let i = 0; i < allSubtotals.length; i++){
+  allSubtotals[i].onclick += totalPrice;
 }
+
+  console.log(totalPrice)
+
+}
+
+
 
 // ITERATION 4
 
